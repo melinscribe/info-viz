@@ -388,7 +388,6 @@ Adding an addiitonal space dimension to time-series (if your data allows) increa
 
 *Narrative Graphics of Time and Space*
 
-<<<<<<< HEAD
 ![Minard's visualization of Napoleon's retreat from Moscow, Paris 1885.](Minard Napoleon.jpg)
 
 *Visual Area and Numerical Measure*
