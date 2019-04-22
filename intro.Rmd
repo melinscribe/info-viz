@@ -10,7 +10,14 @@ output:
     toc: true
     toc_float: true
     toc_depth: 2
+output_dir: "docs"
 #<img src="eui.png" style="position:absolute;top:0px;right:0px;" />
+
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 ```{r setup, include=FALSE}
 #library(sjPlot)
