@@ -122,6 +122,9 @@ Value is the darkness or lightness of a color.  When dealing with pure color (hu
 
 Color blindness is the inability to differentiate certain colors. It comes in different forms, but the most common is red-green color blindness. There are multiple causes, but the most common cause is a mutated X Chromosome. Because men have only one X chromosome, they are more often affected by colorblindness Around 8% of adult men suffer from color blindness. Women on the other hand have two X chromosomes, which is why only few women are color blind. 
 
+![Color Values](colorblind.jpg){ width=75% }
+
+
 The most common type of color blindness is red green color blindness, this type affects about 95% of all color blind people. It means that the affected person can either not see the color red or green or both as colors but only as shades of grey, and hence not distinguish between them. The remaining 5% of colorblindness is made up of blue yellow color blindness, and less commonly – total color blindness. 
 
 Below you can see an R package that tests graphic output for different types of color blindess. The first figure shows a graph as seen by a non-colorblind person. The second figure shows how different types of color blindness affect the vision of the same graph. The R package *colorblindr* can be downloaded  [here](https://github.com/clauswilke/colorblindr)
@@ -287,7 +290,7 @@ The web, historically, displays 72dpi (72 dots or pixels per inch) – a relativ
 Visualization may not be as precise as statistics, but it provides a unique view onto data that can make it much easier to discover interesting structures than numerical methods. Visualization also provides the context necessary to make better choices and to be more careful when fitting models. Anscombe’s Quartet is a case in point, showing that four datasets that have identical statistical properties can indeed be very different.
 
 
-![).](anscombe.jpg)
+![](anscombe.jpg)
 
 When we visualize data, it means that we are encoding data into visual forms such as colors, size, shape, etc. Although our data pretty much decides which type of graphs we can consider, the human brain cannot decode the information of all types of data visualization equally. 
 
@@ -433,15 +436,28 @@ As the importance of location data continues to grow so do the ways you can visu
 
 ![Source: flowingdata.com (2019)](bars-vs-grocery.png)
 
+### Interactive /Animated Examples
+
 http://metrocosm.com/global-migration-map.html
 
 https://whitecollar.thenewinquiry.com/#dr5rud9 
 
 https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/ 
 
-Tyler Vigen wrote an [algorithm](http://tylervigen.com/spurious-correlations) that attempts to automatically find things that correlate.
+https://vimeo.com/128373915
+
+
 
 ### Bad Figures
+
+*Pie Charts*
+![Source: https://www.businessinsider.com.au](piechart1.png){ width=75% }
+
+
+
+![Source: https://www.businessinsider.com.au](piechart2.png){ width=75% }
+
+*Information out of context*
 
 The following example is adapted from Tufte (1983). He shows how data out of context can present untruthful results. When presenting results or effects, you should always show the answer to the question 'compared to what', such as time before/after or other units. 
 
@@ -466,6 +482,8 @@ Think about the responsibility you have towards your reader. Depending on the pl
 4. Graphics shouldn't quote data out of context
 5. The number of dimensions in your graph should never exceed the number of dimensions in your data. 
 
+Tyler Vigen wrote an [algorithm](http://tylervigen.com/spurious-correlations) that attempts to automatically find things that correlate.
+
 ## Resources 
 
 UN Icons
@@ -488,51 +506,108 @@ Sarah Leo, a visual journalist at The Economist, looked through the archives and
 https://medium.economist.com/mistakes-weve-drawn-a-few-8cdd8a42d368
 
 # Adobe Illustrator
-(Show revised Bar Chart here like Tufte)
+
+Download a test version: https://www.adobe.com/products/illustrator.html
 
 # Tableau
 
 Tableau is a Business Intelligence tool for visually analyzing the data. Users can create and distribute an interactive and shareable dashboard, which depict the trends, variations, and density of the data in the form of graphs and charts. Tableau can connect to files, relational and Big Data sources to acquire and process data. The software allows data blending and real-time collaboration, which makes it very unique. It is used by businesses, academic researchers, and many government organizations for visual data analysis.
 
 
-On opening Tableau, you will get the start page showing various data sources. Under the header “Connect”, you have options to choose a file or server or saved data source. 
+On opening Tableau, you will get the start page showing various data sources. Under the header “Connect”, you have options to choose a file or server or saved data source. Open the text file ldc-conflict.csv. 
+
+![](1_load.jpg){width=100%}
 
 While working on Tableau, data can have Live Connection where any change in the source data will be automatically updated in Tableau. On the other hand, data can be Extracted to Tableau repository so that any change made here will not affect the original source data. The second option uses less memory on your computer. 
 
 Now we’re on the Data Source Page. From here, we can choose which sheets or tables
-we’d like to use. We can drag Orders to the canvas. If we want to bring out more
-information from the same data source, we simply drag the other table onto the canvas
+we’d like to use. We can also change the datatype of each variable. For example, click on the # icon on the variable "Year", and change it from Number to Date. Check whether all the measurement variables are really on 'numeric'. 
 
-Click on the sheet tab down here at the bottom.
-We simply drag the fields out, let’s bring: Category to rows, Segment to rows, Quantity to columns, Market to columns, and let’s bring Market to color, as well
+Here you can also merge two datafiles. Click on 'Add' next to Connections on the upper left, and load in the 'Continents' Excel file. Now drag that file next to the ldc-conflicts in the dashbard. Click on the merge circles and choose 'Left join', and match on country. Now we have added the Continent to our data, which can be useful for grouping countries. 
 
+![](2_join.jpg){width=60%}
+
+
+Click on the sheet  1 tab down here at the bottom to start working with your data. 
 The data pane on the left is broken up into dimensions and measures that represent the column headers in the excel sheet. What are dimensions and measures? Dimensions are categorical fields, in this case, fields such as date, customer, and Category. These are fields that we want to slice and dice our numerical data by. Dimensions are often discrete. Discrete fields create labels in the chart and are color coded blue in the data pane and in the view. Measures, on the other hand, are our metrics. They are the numbers we want to analyze. 
 
-If we want to see this over time, we can drag Order Date to the top of the view. Tableau Desktop aggregates our dates at the year level. We can expand this with the plus (+) symbol on the pill. Now we see both quarters and years in the view. 
+![](3_barplot.jpg){width=60%}
 
-If we still want to see the original Sales, we can simply place it back into the
-visualization. Perhaps we want to have the Year over Year Growth values appear in
-a tooltip instead of a graph, we can simply move it to the Tooltip shelf. The tooltip provides additional information when we hover over marks in the view. For example, here in November of 2015, we see we’re almost 50% up from the previous year.
+We simply drag the fields out, let’s bring: Country to rows, Status and Year to columns. Click on country in rows, select measure->count. Now add Conflict to columns. Click on color in the marks bar (it should be conflicts here), and choose another color scheme. 
 
-We could even leave comments. For example, we see there’s a yearly dip in sales in July, but we rebound in the fall. We can leave an annotation by right-clicking, selecting Annotate, and adding a point Annotation.
+![](4_colors.jpg){width=60%}
 
-Crosstab and Exporting Data
-What if we want the raw numbers behind this timeline? Tableau Desktop makes this
-very easy to do. We can right click on the viz and copy the data, and then paste it into Excel – this includes even that Quick Table calculation we did—or we can simply right-click on the tab and “Duplicate as a Crosstab”. We can easily swap our axes and move Category to the Rows shelf. Let’s make this fit a little better
 
-We can right click on the Category pill and select Show Highlighter – if we select Office Supplies, we can see that the fall of 2015 is dark green. 
+On the bottom left, open another Sheet. Drag the country to Rows, and status to columns. In the right-hand "Show me" pane, click on the map. Drag Status over color and change the color scheme to your liking. 
 
-Tableau Desktop provides a simple tool called “Show Me” to help in cases where we know the data we want to look at, but don’t know how to create an effective view. “Show Me” contains a list of common chart types that can help you start your analysis. Notice how different chart types come available based on what measures and
-dimensions we’ve chosen. 
+![](5_map.jpg){width=100%}
 
-Let’s add a trend line. We can do this easily from the analytics pane, selecting trend line and bringing it into the view. 
+In a map, you can add one more variable by duplicating the Longitude and then click on 'dual axis'. 
 
-Dashboards
-Multiple individual views can be combined into a single dashboard. Click the new dashboard tab. 
+![](6_dualaxis.jpg){width=80%}
+
+Add the additional variable to color on the dual second Longitude pane. Take conflict, make it an 'attribute' variable, and set the color to grey scale and reduce the opacity. 
+
+![](7_attribute.jpg){width=60%}
+
+You can make an interactive time-series map by dragging year into 'Pages'. If you want to have another variable appear as value, add it to 'tooltip'. The tooltip provides additional information when we hover over marks in the view. 
+
+![](8_pages.jpg){width=60%}
+
+![](9_tooltip.jpg){width=60%}
+
+
+In Tableau, we can also run simple analytics and create scatterplots. Open a new sheet and drag EVI to columns and bd (battle deaths) to rows. Add country to detail and Continent to color. Drag again bd over 'size'. 
+
+![](10_scatterplot.jpg){width=80%}
+
+In the upper left pane, switch to 'Analytics' and choose 'Trend Line' and simply dragit over the graph. Now go to 'Analysis' in the upper menu, choose Trend Line Options and disable 'show by Continent'. 
+
+![](11_trendline.jpg){width=100%}
+
+
+We can also leave comments, for example we can mark some of the outliers. Click on the point and choose 'Annotate' and choose 'Mark' or 'Point' and add the country name. 
+
+
+*Crosstab and Exporting Data*
+
+What if we want the raw numbers behind this timeline? Tableau Desktop makes this very easy to do. We can right click on the viz and copy the data, and then paste it into Excel – or we can simply right-click on the tab and “Duplicate as a Crosstab”. We can easily swap our axes and move Category to the Rows shelf. 
+
+![](12_crosstab.jpg){width=60%}
+
+
+We can right click on a variable and select Show Highlighter – and select for example by country. You can also shade the areas of the cell according to value. Drag Measure in color, choose square in the Marks pane and click on 'hide mark labels'. Choose the color scheme of your liking. 
+
+![](13_crosstab2.jpg){width=60%}
+
+
+Click on a new sheet to create a simple time series graph. Add Year and Status to columns, and EVI and civilian deaths to rows. Now you see that non-lDCs seems to have a very high casualty toll in 2009. Let's inspect that further. Let's create a new time-series in a new sheet, but this time we drag onnly Year to column and civilian deaths to row, and color sort by continent. We see that the outlier is in Asia. Let's try to find out which country drives this. Right click on the 'Asia' line and select Group. 
+
+![](14_timeseries.jpg){width=60%}
+
+Now you should have a subb-category of Asia on your left hand variable pane. Open a new sheet and again drag Year to column and civilian deaths to row. Select circles view and Filter by Asia, and color code by country. 
+
+![](15_srilanka.jpg){width=80%}
+
+*Dashboards*
+
+Multiple individual views can be combined into a single, interactive dashboard. Click the new dashboard tab in the bottom. Drag all visualization you want into the dasboard. 
+
+![](15_dashboard.jpg){width=100%}
 
 
 # References 
 
 
+
+Healy, Kiera. 2019. *Data Visualization : A practical introduction.* Princeton Iniversity Press. 
+
+Kastellec, Jonathan P., and Eduardo L. Leoni. 2007. "Using graphs instead of tables in political science." *Perspectives on politics 5*, no. 4: 755-771.
+
+Sosulski, Krista. 2018. *Data Visualization Made Simple: Insights Into Becoming Visual.* Routledge.
+
+Tufte, Edward R. 1983. *The visual display of quantitative information*. Cheshire: Graphics P. 
+
+Tufte, Edward R.. 2006. *Beautiful evidence.* Cheshire, Conn.: Graphics Press.
 
 
