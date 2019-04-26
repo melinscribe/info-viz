@@ -91,8 +91,7 @@ Color schemes are practical guidlines on how to mix colors together.
 <div class = "row">
 <div class = "col-md-6">
 
-Complementary Colors  are located opposite each other on the color wheel.
-Every visual presentation involves figure-ground relationships. This relationship between a subject (or figure) and its surrounding field (ground) will evidence a level of contrast; the more an object contrasts with its surrounds, the more visible it becomes.
+Complementary Colors  are located opposite each other on the color wheel. Every visual presentation involves figure-ground relationships. This relationship between a subject (or figure) and its surrounding field (ground) will evidence a level of contrast; the more an object contrasts with its surrounds, the more visible it becomes.
 </div>
 
 <div class = "col-md-6">
@@ -161,7 +160,7 @@ https://coolors.co
 
 
 ### What is Typography?
-Typography is the style, arrangement, or appearance of typeset matter
+Typography is the style, arrangement, or appearance of typeset matter.
 The main goal of typography is presenting information in a way that is readable and easy to consume.
 
 ### Classifications
@@ -225,13 +224,13 @@ Use bold or italic as little as possible.
 
 ### How to combine fonts
 
-Before we start looking for a font to add to our design and combine it with our body text font, we need to ask ourselves: do we really need more than one font? Don’t just add one for the sake of it. There’s no rule in typography that says the more fonts used the better (the contrary is probably more true).
+Before you start looking for a font to add to our design and combine it with our body text font, you need to ask yourself: do I really need more than one font? Don’t just add one for the sake of it. There’s no rule in typography that says the more fonts used the better (the contrary is probably more true).
 
 One of the main reasons that pairing serif and sans-serif fonts works so well is that it creates contrast. This idea of contrast brings together multiple concepts that you should be considering, including hierarchy and how fonts complement each other.
 
-Contrast can be achieved in a number of ways, including through style, size, weight, spacing, and color, among others. In the example below, a bold, chunky font is paired with a tall, thin one—and although they’re almost complete opposites, they work nicely together in large part because they are so different. The differences help create distinct roles for each font, allowing them to stand out as individual pieces of information.
+Contrast can be achieved in a number of ways, including through style, size, weight, spacing, and color, among others.  The differences help create distinct roles for each font, allowing them to stand out as individual pieces of information.
 
-When combining fonts, you do want contrast, but you don’t want conflict. Just because fonts are different doesn’t mean they will automatically work well together. Generally speaking, typefaces that share a couple qualities—maybe they have similar proportions, or the lowercase letters have the same height (known as “x-height”)—are more likely to look harmonious together, even if the overall appearance differs.
+When combining fonts, you do want contrast, but you don’t want conflict. Just because fonts are different doesn’t mean they will automatically work well together. Generally speaking, typefaces that share a couple qualities — maybe they have similar proportions, or the lowercase letters have the same height (known as “x-height”) — are more likely to look harmonious together, even if the overall appearance differs.
 
 choosing fonts that are too similar (i.e., don’t have enough contrast) becomes problematic. You’ll have trouble establishing a hierarchy because the fonts aren’t visually distinguishable from each other. And any differences that are discernible may look more like a mistake than a purposeful choice.
 
@@ -255,8 +254,7 @@ As an example; fonts are always created using vectors so that the colours can be
 ![Vector vs. Pixel Image](vectore.jpg){ width=50% }
 
 
-Pixel graphics use a grid of small, square picture elements (pixels) for displaying graphics. Each pixel has a particular position and a particular colour value. The total number of pixels in an image is always the same. If the image is enlarged, the resolution is reduced. Then the image often looks “jagged“. If an interpolation is used the image looks smooth
-but not as sharp. 
+Pixel graphics use a grid of small, square picture elements (pixels) for displaying graphics. Each pixel has a particular position and a particular colour value. The total number of pixels in an image is always the same. If the image is enlarged, the resolution is reduced. Then the image often looks “jagged“. If an interpolation is used the image looks smooth but not as sharp. 
 Dataforms: JPG, PNG, TIFF, GIF, PSD, BMP
 
 Vector graphics are created from mathematically defined lines (vectors) and curves.
@@ -308,8 +306,7 @@ We best judge a quantity if we have a clear scale on which elements are aligned,
 We tend to misjudge quantities represented as angles. This is why pie charts are usually a bad idea. We also misjudge areas. We have known for a long time that area-based comparisons of quantities are easily misinterpreted or exaggerated. For example, values in the data might be encoded as lengths which are then squared to make the shape on the graph. The result is that the difference in size between the squares or rectangles area will be much larger than the difference between the two numbers they represent. 
 
 
-Finally, three-dimensional visualization of data is hardest to interprete. 
-Our ability to scan the dimension of depth (z-axis) is weaker than our ability to grasp the x and y axes. Three-dimensional visualization can look impressive, but they are also harder to judge.
+Finally, three-dimensional visualization of data is hardest to interprete.Our ability to scan the dimension of depth (z-axis) is weaker than our ability to grasp the x and y axes. Three-dimensional visualization can look impressive, but they are also harder to judge.
 
 
 
@@ -373,89 +370,32 @@ Tables are often presented with rows/cols ordered alphabetically which is good f
 Like good writing, good graphical displays of data communicate ideas with clarity, precision, and efficiency.
 Like poor writing, bad graphical displays distort or obscure the data, make it harder to understand or compare, or otherwise thwart the communicative effect which the graph should convey.
 
-### Good Figures
-Coming across a good visualization in this dense information jungle nowadays is a relief, because it is effortless and just poures in. 
-
-After pie charts, double Y-axis graphs have caused more trouble
-than almost any other
-
-When we look at maps, we tend to focus on the substantive matter of the data and don't primarily think about the methodology behind it. 
-
-*Time-Series*
-
-A random sample of 4'000 graphics from 15 popular newspapers and magazins from around the world between 2974 and 1980 showed that 75% of these graphics displayed time-series Tufte (1983). 
-The strength of time-series is the natural ordering of the time scale, and the ability to make big data sets with lots of variability easily visual. 
-
-Adding an addiitonal space dimension to time-series (if your data allows) increases explanatory power. The following examples show complex multivariate graphics that are so easy to understand that viewers barely notice the multiple dimensions. 
-
-
-*Narrative Graphics of Time and Space*
-
-![Minard's visualization of Napoleon's retreat from Moscow, Paris 1885.](Minard Napoleon.jpg)
-
-*Visual Area and Numerical Measure*
-
-![Antonio Gabaglio, Teoria Generale della Statistica (Milan, second edition, 1888).](postale.jpg)
-
-
-*Context is essential*
-
-Good data visualization should always answer the question 'compared to what?'. Too few data in a graph should always alarm you. Consider the example about traffic deaths in the 'bad figures' section. 
-
-*Data-Ink*
-
-Good information visualization should invoke your focus on the substance of the data and nothing else. STatistical graphics are instruments to help people reason about quantitative information. 
-Data-Ink is the non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented. That ink changes as the data changes. You should try to maximize the share of data-ink in your graph. Erase non-data-ink within reason.
-
-*Chartjunk*
-
-The decoration of graphs produces a lot of ink that is not necessary to understand the data behind the graph. This non-data-ink is called chartjunk. This can include
-
-* unintentional optical art (eye-catching visual additions to a graph that distracts from the actual information and distorts the reader)
-
-* The Grid (Grids are mostly for the intitial plotting of the data, but they carry no information and clutter up the graphic)
-
-* Self-promoting graphics (when the data measures and elements become the design elements)
-
-<div class = "row">
-<div class = "col-md-6">
-![Redesign Histogram. The left figure is a basic ggplot2 output in R. ](bdldc.jpg)
-
-</div>
-
-<div class = "col-md-6">
-![The right figure is more viewer-friendly and has less Chartjunk, typefont is clear, words run from left to right. ](bdldc2.jpg)
-
-</div>
-</div>
-
-
-*Maps*
-
-As the importance of location data continues to grow so do the ways you can visualize this information. Maps are great for an intuitive to look at spatial patterns and great for distributing geographic data. In many cases, just by making a map you are doing analysis. That’s because you’re making the map for a reason. You have a question you want the map to help answer: Where has disease ravaged trees? Which communities are in the path of a wildfire? Where are areas of high crime? It’s also because when you make a map, as with any analysis, you’re making decisions about which information to include and how to present that information. Effective visualization is valuable for communicating results and messages clearly in an engaging way. Here are three key decisions that affect the information a map presents and the story it tells.
-
-![Source: flowingdata.com (2019)](bars-vs-grocery.png)
-
-### Interactive /Animated Examples
-
-http://metrocosm.com/global-migration-map.html
-
-https://whitecollar.thenewinquiry.com/#dr5rud9 
-
-https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/ 
-
-https://vimeo.com/128373915
-
-
 
 ### Bad Figures
 
 *Pie Charts*
+
 ![Source: https://www.businessinsider.com.au](piechart1.png){ width=75% }
 
+Our main question is, can we really compare the slices to figure out the distinctions in size between each and every pie slice? If we’re just trying to learn that, yeah, EPP is bigger than S&D, then what’s the point of the chart? I could have told you that with two number. 
 
+No, the chart is only useful if we’re able to compare each and every element within it. Look at the single slices, and see if you can figure out an ordering from largest to smallest. 
 
-![Source: https://www.businessinsider.com.au](piechart2.png){ width=75% }
+The reality is, humans aren’t very good at comparing slices of a circle when it comes to size. Now, let’s look at how easily pie charts can be manipulated. 
+
+Here’s that same data as above, only on a 3D Pie Chart: 
+
+![Source: https://www.businessinsider.com.au](piechart2.jpg){ width=75% }
+
+Looking at this chart, S&D  appears to be roughly even with EPP.
+
+But the reality is, that’s because the perspective is distorted, it seems as if red is in fact bigger. 
+
+*Too much going on*
+
+Another mistake is to include too many things that are going on in one graph. Below, you find one such example. In addition, the dots are connected indicating a trend line over time, which is not true as there are several regions from the same year before it changes to the next year. 
+
+![... What?](bad1.jpg){ width=80% }
 
 *Information out of context*
 
@@ -482,6 +422,78 @@ Think about the responsibility you have towards your reader. Depending on the pl
 4. Graphics shouldn't quote data out of context
 5. The number of dimensions in your graph should never exceed the number of dimensions in your data. 
 
+### Good Figures
+Coming across a good visualization in this dense information jungle nowadays is a relief, because it is effortless and just poures in. 
+
+*Context is essential*
+
+Good data visualization should always answer the question 'compared to what?'. Too few data in a graph should always alarm you. Consider the example about traffic deaths in the 'bad figures' section. 
+
+*Data-Ink*
+
+Good information visualization should invoke your focus on the substance of the data and nothing else. Statistical graphics are instruments to help people reason about quantitative information. 
+Data-Ink is the non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented. That ink changes as the data changes. You should try to maximize the share of data-ink in your graph. Erase non-data-ink within reason.
+
+*Chartjunk*
+
+The decoration of graphs produces a lot of ink that is not necessary to understand the data behind the graph. This non-data-ink is called chartjunk. This can include
+
+* unintentional optical art (eye-catching visual additions to a graph that distracts from the actual information and distorts the reader)
+
+* The Grid (Grids are mostly for the intitial plotting of the data, but they carry no information and clutter up the graphic)
+
+* Self-promoting graphics (when the data measures and elements become the design elements)
+
+<div class = "row">
+<div class = "col-md-6">
+![Redesign Histogram. The left figure is a basic ggplot2 output in R. ](bdldc.jpg)
+
+</div>
+
+<div class = "col-md-6">
+![The right figure is more viewer-friendly and has less Chartjunk, typefont is clear, words run from left to right. ](bdldc2.jpg)
+
+</div>
+</div>
+
+
+
+*Time-Series*
+
+A random sample of 4'000 graphics from 15 popular newspapers and magazins from around the world between 2974 and 1980 showed that 75% of these graphics displayed time-series Tufte (1983). 
+The strength of time-series is the natural ordering of the time scale, and the ability to make big data sets with lots of variability easily visual. 
+
+
+*Maps*
+
+As the importance of location data continues to grow so do the ways you can visualize this information. Maps are great for an intuitive to look at spatial patterns and great for distributing geographic data. In many cases, just by making a map you are doing analysis. That’s because you’re making the map for a reason. You have a question you want the map to help answer: Where has disease ravaged trees? Which communities are in the path of a wildfire? Where are areas of high crime? It’s also because when you make a map, as with any analysis, you’re making decisions about which information to include and how to present that information. Effective visualization is valuable for communicating results and messages clearly in an engaging way. Here are three key decisions that affect the information a map presents and the story it tells.
+
+![Source: flowingdata.com (2019)](bars-vs-grocery.png)
+
+
+Adding an addiitonal space dimension to time-series (if your data allows) increases explanatory power. The following examples show complex multivariate graphics that are so easy to understand that viewers barely notice the multiple dimensions. 
+
+
+*Narrative Graphics of Time and Space*
+
+![Minard's visualization of Napoleon's retreat from Moscow, Paris 1885.](Minard Napoleon.jpg)
+
+*Visual Area and Numerical Measure*
+
+![Antonio Gabaglio, Teoria Generale della Statistica (Milan, second edition, 1888).](postale.jpg)
+
+
+
+### Interactive /Animated Examples
+
+http://metrocosm.com/global-migration-map.html
+
+https://whitecollar.thenewinquiry.com/#dr5rud9 
+
+https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/ 
+
+https://vimeo.com/128373915
+
 Tyler Vigen wrote an [algorithm](http://tylervigen.com/spurious-correlations) that attempts to automatically find things that correlate.
 
 ## Resources 
@@ -497,7 +509,7 @@ https://govdna.frontwise.com/#layout/data/country/THA/x/12/y/5/z/8/a/0
  
  https://projects.interacta.io/country-tsne/
  
- Tufte in R: http://motioninsocial.com/tufte/#minimal-line-plot
+Tufte in R: http://motioninsocial.com/tufte/#minimal-line-plot
  
  
  
